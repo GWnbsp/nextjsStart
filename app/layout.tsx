@@ -28,6 +28,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        我是根Layout
+        {/* 这里的children就是page.tsx的内容 */}
         {children}
       </body>
     </html>
