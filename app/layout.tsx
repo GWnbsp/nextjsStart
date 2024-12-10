@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import Header from "@/components/header";
 import "./globals.css";
-import type { HeaderItem } from '@/types/header'
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -25,25 +23,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
-  const headerItems: HeaderItem[] = [
-    {
-      name: "performance",
-      path: "/performance"
-    }, {
-      name: "reliability",
-      path: "/reliability"
-    }, {
-      name: "scale",
-      path: "/scale"
-    }
-  ]
+
 
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header headerItems={headerItems} />
         {children}
       </body>
     </html>

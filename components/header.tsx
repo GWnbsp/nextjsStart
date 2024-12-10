@@ -8,14 +8,14 @@ export default function Header({ headerItems }: HeaderProps) {
     const pathname = usePathname()
 
     // 检查当前路径是否应该显示header
-    const shouldShowHeader = headerItems.some(item => item.path === pathname) || pathname === '/'
+    // const shouldShowHeader = headerItems.some(item => item.path === pathname) || pathname === '/'
     // 或者 
     // const shouldShowHeader = ['/', ...headerItems.map(item => item.path)]
 
     // 如果当前路径不在headerItems中且不是首页，则不渲染组件
-    if (!shouldShowHeader) {
-        return null
-    }
+    // if (!shouldShowHeader) {
+    //     return null
+    // }
 
     return (
         <div className="absolute w-full z-10">

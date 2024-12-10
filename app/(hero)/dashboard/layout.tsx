@@ -8,6 +8,6 @@ export default function DashboardPageLayout({
 }>) {
 
   return (
-    <>{children}</>
+    <>1 {children}</>
   );
 }
