@@ -1,10 +1,9 @@
 import React from 'react';
-import { Button } from 'antd';
 
-const Home = () => (
-  <div className="App">
-    <Button type="primary">Button</Button>
-  </div>
-);
-
-export default Home;
+export default function Page() {
+  return (
+    <div className='flex mt-6 p-6 bg-green-500 text-white rounded-lg'>
+      @children
+    </div>
+  )
+}
